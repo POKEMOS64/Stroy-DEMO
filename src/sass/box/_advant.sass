@@ -1,0 +1,51 @@
+.advant
+	+bg(text_new_bg)
+	padding: 3rem 0 2rem
+	h2
+		text-align: center
+	&_group
+		display: flex
+		flex-direction: row
+		justify-content: center 
+		align-content: flex-start
+		padding: 0
+		@media(max-width:1100px)
+			flex-direction: column
+			display: block
+		.ele
+			position: relative
+			background: #ffffff
+			margin: 1rem 2rem
+			padding: 1.7rem 2.5rem 4rem 1.9rem
+			box-sizing: border-box 
+			border: 1px solid gray
+			+bg(full-rytojfnu)
+			background-repeat: no-repeat
+			background-position: 100% 100%
+			@media(max-width:480px)
+				padding-bottom: 8rem
+			&:last-child
+				+bg(8426b756a5cdadd3) 
+			.h2
+				font:
+					size: 1.2rem
+			.list
+				li
+					display: block
+					font:
+						size: 1rem
+					line-height: 2.4rem
+					&::before
+						content: ''
+						margin-top: 1.3rem
+						margin-right: 1.5rem
+						display: block
+						float: left
+						width: 20px
+						height: 1px
+						background-color: gray
+			button
+				position: absolute
+				bottom: 1.5rem
+				height: auto
+				padding: .5rem 2rem

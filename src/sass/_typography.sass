@@ -1,0 +1,80 @@
+html
+	//font-size: 20px
+	//@media(max-width:1600px)
+		font-size: 16px
+	//@media(max-width:1440px)
+		font-size: 15px
+	//@media(max-width:1200px)
+		font-size: 15px
+	@media(max-width:480px)
+		font-size: 12px
+
+$PT: 'Scada', sans-serif
+body
+	background: #fff
+	font:
+		family: $PT
+sup
+	position: relative
+	top: -0.5rem
+.img
+	img
+		width: auto !important
+
+/*Параметры для картинок*/
+img,
+iframe 
+	width: 100%
+	margin: auto
+	display: block
+	margin-top: 1rem
+	margin-bottom: 1rem
+/*Обязательный параметр!!!!!!!!*/
+
+
+a,button
+	cursor: pointer
+	text-transform: none
+	text-decoration: none
+	&:hover
+			opacity: .8
+
+
+main
+h1
+	font:
+		size: 1.5rem
+	border-bottom: 2px solid #D2D2D2
+	@media(max-width: 480px)
+		text-align: center
+		font:
+			size: 2.3rem
+h3
+	@media(max-width: 480px)
+		text-align: center
+		font:
+			size: 1.5rem
+h2
+	font:
+		size: 2.5rem
+	@media(max-width: 480px)
+		text-align: center
+		font:
+			size: 2rem
+
+.btn
+	background: #01579b !important
+.pdf
+	&:after
+		content: ''
+		+bg(pdf)
+		width: 48px
+		height: 48px
+		display: block
+.doc
+	&:after
+		content: ''
+		+bg(doc)
+		width: 48px
+		height: 48px
+		display: block
